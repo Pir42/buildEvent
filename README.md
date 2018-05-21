@@ -1,24 +1,8 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h1>BuildEvent</h1>
+<ul>
+  <li>Gem :</li>
+  <li>Devise</li>
+  <li>Simple_form</li>
+  <li>Simple_calendar</li>
+</ul>
+<p>Scaffold for events : <br> rails g scaffold event name (for the gem simple calendar) start_time:datetime end_time:datetime description:text place:string user:references</p>
