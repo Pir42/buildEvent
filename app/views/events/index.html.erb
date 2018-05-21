@@ -4,6 +4,16 @@
 <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <%= link_to "Edit your account", edit_user_registration_path %>
 
+<%= month_calendar events: @events do |date, meetings| %>
+  <%= date %>
+
+<% meetings.each do |meeting| %>
+  <div>
+      <%= meeting.name %>
+  </div>
+  <% end %>
+<% end %>
+
 <h1>Events</h1>
 
 <table>
@@ -40,12 +50,3 @@
 
 <%= link_to 'New Event', new_event_path %>
 
-<%= month_calendar events: @events do |date, meetings| %>
-  <%= date %>
-
-  <% meetings.each do |meeting| %>
-    <div>
-      <%= meeting.name %>
-    </div>
-  <% end %>
-<% end %>
