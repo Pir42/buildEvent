@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<p>Hi <%= @user.username %></p>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<%= link_to "Edit your account", edit_user_registration_path %>
+
 <h1>Events</h1>
 
 <table>
@@ -23,7 +27,7 @@
         <td><%= event.end_time %></td>
         <td><%= event.description %></td>
         <td><%= event.place %></td>
-        <td><%= event.user.email %></td>
+        <td><%= event.user.username %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
