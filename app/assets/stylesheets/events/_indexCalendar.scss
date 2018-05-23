@@ -1,0 +1,67 @@
+$blue: #0057FF;
+
+.indexCalendar {
+  width: 1007px;
+}
+.simple-calendar {
+  table {
+    border-spacing: 3em;
+    border-collapse: separate;
+  }
+  .calendar-heading {
+    font-size: 2em;
+    text-align: center;
+  }
+  .day {
+    border: 2px solid $blue;
+    border-radius: 10px;
+    min-width: 85px;
+    height: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+    border-width: 3px;
+  }
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    opacity: .3;
+  }
+  .next-month {
+    opacity: .3;
+  }
+  .current-month {
+    font-size: 1.2em;
+  }
+
+  .has-events {}
+
+  #round {
+    width: 15px;
+    height: 15px;
+    border: 2px solid $blue;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  #roundBlock {
+    margin-top: 10px;
+    margin-left: -15px;
+  }
+  #round a {
+    color: transparent;
+  }
+}

@@ -2,12 +2,16 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+
   # GET /events
   # GET /events.json
   def index
     @events = Event.all
     @user = current_user
     @current_user.id = current_user.id
+      def start_time
+      self.my_related_model.start ##Where 'start' is a attribute of type 'Date' accessible through MyModel's relationship
+      end
   end
 
   # GET /events/1
