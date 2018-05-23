@@ -1,0 +1,59 @@
+$blue: #0057FF;
+
+.UserRegForm {
+  width: 470px;
+  margin: auto;
+  margin-top: 200px;
+  box-shadow: 0px 0px 10px  rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  padding: 30px;
+}
+.UserRegForm h2 {
+  margin-bottom: 2em;
+  font-size: 2.2em;
+  text-align: center
+}
+.UserRegForm input {
+  margin-bottom: 2em;
+}
+
+.UserRegForm label {
+  margin-bottom: .5em;
+}
+
+.UserRegForm input:focus {
+  color: $blue;
+}
+.logInForm {
+
+}
+.user_login {
+  float: left;
+}
+.logInOr {
+  float: left;
+  margin: 1.5em 2em 0 2em;
+}
+#user_remember_me {
+  background-color: white;
+  border: 1px solid $blue;
+}
+.UserRegForm .form-actions input {
+  background-color: white; /* Green */
+  border: 1px solid $blue;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: $blue;
+  display: inline-block;
+  font-size: 1.1em;
+  transition: all .5s ease;
+}
+.UserRegForm .form-actions input:hover {
+  background-color: $blue;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
