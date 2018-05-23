@@ -23,6 +23,7 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
+    @current_user = current_user
   end
 
   # POST /events
