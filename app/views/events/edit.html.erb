@@ -1,5 +1,5 @@
 <h1>Editing Event</h1>
-<% if @event.id == @current_user.id %>
+<% if @event.user_id == @current_user.id %>
   <%= render 'form', event: @event %>
 <% else %>
   <p>Vous n'avez pas la permission de modifier cet event</p>
