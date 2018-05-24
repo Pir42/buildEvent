@@ -1,37 +1,40 @@
 <div class="containerFlex">
   <div class="indexUser">
-    <p>Hi <%= @user.username %></p>
-    <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-    <%= link_to "Edit your account", edit_user_registration_path %>
+    <div class="avatar"></div>
+    <div class="userInfo">
+      <div><p class="username"><%= @user.username %></p></div>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <%= link_to "Edit your account", edit_user_registration_path %>
+    </div>
   </div>
   <div class="indexCalendar">
     <%= month_calendar events: @events do |date, meetings| %>
     <%= date.strftime("%e") %>
-  <div id="roundBlock">
-  <% meetings.each do |meeting| %>
-    <span id="round"><%= link_to "_", meeting %>
-    </span>
-  <% end %>
-  </div>
-  <% end %>
+    <div id="roundBlock">
+      <% meetings.each do |meeting| %>
+      <span id="round"><%= link_to "_", meeting %>
+      </span>
+      <% end %>
+    </div>
+    <% end %>
   </div>
   <div class="indexEvents">
-    <h1><span id="blueE">e</span>vents</h1>
-        <% @events.each do |event| %>
-        <div class="eventsFlex">
-          <div class="date">
-            <p class="number"><%= event.start_time.strftime("%e") %></p>
-            <p class="month"><%= event.start_time.strftime("%b") %></p>
-          </div>
-          <div class="eventInfos">
-            <h3><%= link_to event.name, event %></h3>
-            <p class="place"><%= event.place %></p>
-            <p class="user">Par <%= event.user.username %></p>
-          </div>
+    <div class="containerMargin">
+      <h1><span id="blueE">e</span>vents</h1>
+      <% @events.each do |event| %>
+      <div class="eventsFlex">
+        <div class="date">
+          <p class="number"><%= event.start_time.strftime("%e") %></p>
+          <p class="month"><%= event.start_time.strftime("%b") %></p>
         </div>
-
-        <% end %>
-    <%= link_to 'New Event', new_event_path %>
+        <div class="eventInfos">
+          <h3><%= link_to event.name, event %></h3>
+          <p class="place"><%= event.place %></p>
+          <p class="user">Par <%= event.user.username %></p>
+        </div>
+      </div>
+      <% end %>
+      <%= link_to 'New Event', new_event_path %>
+    </div>
   </div>
 </div>
-

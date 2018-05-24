@@ -1,11 +1,11 @@
 $blue: #0057FF;
 
 .indexCalendar {
-  width: 1007px;
+  width: 50%;
 }
 .simple-calendar {
   table {
-    border-spacing: 3em;
+    border-spacing: 1.8em;
     border-collapse: separate;
   }
   .calendar-heading {
@@ -13,13 +13,12 @@ $blue: #0057FF;
     text-align: center;
   }
   .day {
-    border: 2px solid $blue;
+    border: 1.5px solid $blue;
     border-radius: 10px;
-    min-width: 85px;
-    height: 70px;
-    font-weight: bold;
+    min-width: 55px;
+    height: 48px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .wday-0 {}
@@ -31,7 +30,7 @@ $blue: #0057FF;
   .wday-6 {}
 
   .today {
-    border-width: 3px;
+    border-width: 2.5px;
   }
   .past {}
   .future {}
@@ -45,15 +44,15 @@ $blue: #0057FF;
     opacity: .3;
   }
   .current-month {
-    font-size: 1.2em;
+    font-size: .9em;
   }
 
   .has-events {}
 
   #round {
-    width: 15px;
-    height: 15px;
-    border: 2px solid $blue;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $blue;
     border-radius: 50px;
     display: inline-block;
   }
