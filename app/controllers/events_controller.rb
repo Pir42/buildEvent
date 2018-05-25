@@ -1,8 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
-
+  layout "application"
   # GET /events
   # GET /events.json
   def index
@@ -78,4 +77,5 @@ class EventsController < ApplicationController
     def event_params
       params.require(:event).permit(:name, :start_time, :end_time, :description, :place, :user, :photo)
     end
+
 end

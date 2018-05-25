@@ -1,0 +1,91 @@
+  $blue: #0057FF;
+
+  .menu {
+    width: 270px;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+    .container {
+      margin: 20px 0;
+    }
+    .hide {
+      display: inline-block;
+      width: 0;
+      overflow: hidden;
+      transition: all .5s ease;
+    }
+    .wrapper {
+      width: 270px;
+      height: 30px;
+    }
+    p {
+      font-family: 'Roboto';
+      color: #0057ff;
+      opacity: 0;
+      transition: opacity .8s ease;
+      font-size: 1.4em;
+    }
+    .btn {
+      width: 50px;
+      height: 50px;
+      border: 1.5px solid #0057ff;
+      border-radius: 50px;
+      display: inline-block;
+
+    }
+    .container a:hover .a {
+      width: 170px;
+    }
+    .container a:hover .b {
+      width: 80px;
+    }
+    .container a:hover .c {
+      width: 130px;
+    }
+    .container a:hover p {
+      opacity: 1;
+      transition: opacity .4s ease;
+    }
+  /* .container a:hover .btn {
+    background-color: #0057ff;
+    transition: all .5s ease;
+  } */
+    a {
+      text-decoration: none;
+    }
+    .one {
+      width: 170px;
+    }
+    .two {
+      width: 80px;
+    }
+    .three {
+      width: 130px;
+    }
+    .cross {
+      background: url(cross.svg);
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 9px;
+      left: 9.5px;
+    }
+    .home {
+      background: url(home.svg);
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      position: relative;
+      top: 10.5px;
+      left: 10px;
+    }
+    .user {
+      background: url(user.svg);
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 8px;
+      left: 10.5px;
+    }
+}

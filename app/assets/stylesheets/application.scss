@@ -67,6 +67,7 @@ $blue: #0057FF;
 
 @import "devise/*";
 @import "events/*";
+@import "others/*";
 
 input {
   padding: 6px 4px;
@@ -82,4 +83,14 @@ input:focus {
 a:hover {
  color: $blue;
  background-color: transparent;
+}
+
+.indexFlex {
+  display: flex;
+}
+.header {
+  width: 20%;
+}
+.content {
+  width: 80%;
 }

@@ -1,0 +1,25 @@
+<div class="menu">
+  <div class="container">
+    <%= link_to events_path do %>
+    <div class="hide b" id="home"><div class="wrapper two"><p id="textHome">Home</p></div></div>
+    <div class="btn" id="btnHome"><div class="home"></div></div>
+    <% end %>
+  </div>
+  <div class="container">
+    <%= link_to new_event_path do %>
+    <div class="hide a" id="event"><div class="wrapper one"><p id="textEvent">Create an event</p></div></div>
+    <div class="btn" id="btnEvent"><div class="cross"></div></div>
+    <% end %>
+  </div>
+  <div class="container">
+    <%= link_to edit_user_registration_path do %>
+    <div class="hide c"><div class="wrapper three"><p>Your profile</p></div></div>
+    <div class="btn" id=""><div class="user"></div></div>
+    <% end %>
+  </div>
+  <div class="container">
+    <%= link_to destroy_user_session_path, method: :delete do %>
+    <div class="hide c"><div class="wrapper three"><p>Log out</p></div></div>
+    <div class="btn" id=""></div></div>
+    <% end %>
+  </div>
