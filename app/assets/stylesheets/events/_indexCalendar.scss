@@ -1,12 +1,25 @@
 $blue: #0057FF;
 
 .indexCalendar {
-  width: 50%;
+  width: 40%;
+  margin: 15px 120px 0 120px;
 }
 .simple-calendar {
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+  #next {
+    margin-left: 11px;
+  }
+  a {
+    text-decoration: none;
+  }
   table {
     border-spacing: 1.8em;
     border-collapse: separate;
+    margin: auto;
+    width: 100%;
   }
   .calendar-heading {
     text-align: center;
@@ -14,11 +27,12 @@ $blue: #0057FF;
   .calendar-title {
     font-size: 2em;
     font-weight: bold;
+    margin: 0 20px;
   }
   .day {
     border: 1.7px solid $blue;
     border-radius: 7px;
-    min-width: 55px;
+    min-width: 53px;
     height: 48px;
     text-align: center;
     padding-top: 5px;
