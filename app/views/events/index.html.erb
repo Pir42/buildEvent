@@ -1,11 +1,11 @@
 <div class="containerFlex">
   <div class="indexUser">
-    <div class="avatar"></div>
-    <div class="userInfo">
+    <div class="user">
+      <div class="avatar"></div>
       <div><p class="username"><%= @user.username %></p></div>
-      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-      <%= link_to "Edit your account", edit_user_registration_path %>
     </div>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+    <%= link_to "Edit your account", edit_user_registration_path %>
   </div>
   <div class="indexCalendar">
     <%= month_calendar events: @events do |date, meetings| %>

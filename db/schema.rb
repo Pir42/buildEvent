@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_21_121722) do
+ActiveRecord::Schema.define(version: 2018_05_25_124808) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,20 @@ ActiveRecord::Schema.define(version: 2018_05_21_121722) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "participants_id"
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.integer "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.index ["participants_id"], name: "index_events_on_participants_id"
     t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "participants", force: :cascade do |t|
+    t.bigint "events_id"
+    t.bigint "users_id"
+    t.index ["events_id"], name: "index_participants_on_events_id"
+    t.index ["users_id"], name: "index_participants_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -41,9 +54,19 @@ ActiveRecord::Schema.define(version: 2018_05_21_121722) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
+    t.bigint "participants_id"
+    t.string "avatar_file_name"
+    t.string "avatar_content_type"
+    t.integer "avatar_file_size"
+    t.datetime "avatar_updated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["participants_id"], name: "index_users_on_participants_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "events", "participants", column: "participants_id"
   add_foreign_key "events", "users"
+  add_foreign_key "participants", "events", column: "events_id"
+  add_foreign_key "participants", "users", column: "users_id"
+  add_foreign_key "users", "participants", column: "participants_id"
 end

@@ -9,12 +9,15 @@ $blue: #0057FF;
     border-collapse: separate;
   }
   .calendar-heading {
-    font-size: 2em;
     text-align: center;
   }
+  .calendar-title {
+    font-size: 2em;
+    font-weight: bold;
+  }
   .day {
-    border: 1.5px solid $blue;
-    border-radius: 10px;
+    border: 1.7px solid $blue;
+    border-radius: 7px;
     min-width: 55px;
     height: 48px;
     text-align: center;
@@ -52,7 +55,7 @@ $blue: #0057FF;
   #round {
     width: 10px;
     height: 10px;
-    border: 1px solid $blue;
+    border: 1.2px solid $blue;
     border-radius: 50px;
     display: inline-block;
   }

@@ -9,9 +9,6 @@ class EventsController < ApplicationController
     @events = Event.all
     @user = current_user
     @current_user.id = current_user.id
-      def start_time
-      self.my_related_model.start ##Where 'start' is a attribute of type 'Date' accessible through MyModel's relationship
-      end
   end
 
   # GET /events/1
@@ -79,6 +76,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:name, :start_time, :end_time, :description, :place, :user)
+      params.require(:event).permit(:name, :start_time, :end_time, :description, :place, :user, :photo)
     end
 end
