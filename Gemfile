@@ -33,6 +33,7 @@ gem 'devise'
 gem 'simple_form'
 gem "simple_calendar", "~> 2.0"
 gem "paperclip"
+gem 'aws-sdk-s3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
