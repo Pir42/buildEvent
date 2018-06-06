@@ -1,0 +1,46 @@
+$blue: #0057FF;
+
+.show {
+  margin-top: 5em;
+  margin-left: 10em;
+  p {
+    display: block;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+  }
+  .dateevents{
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  .desc {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+  }
+  .place {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+  }
+  .user {
+    font-size: 1em;
+    margin-bottom: 5em;
+  }
+  .blue {
+    color: $blue;
+  }
+  .link a {
+    font-size: 1.1em;
+    color: $blue;
+    text-decoration: none;
+    margin-right: 2em;
+  }
+  .link a:hover {
+    text-decoration: underline;
+  }
+  #delete a {
+    color: red;
+  }
+}
