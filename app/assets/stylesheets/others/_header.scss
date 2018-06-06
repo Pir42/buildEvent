@@ -63,7 +63,7 @@
       width: 130px;
     }
     .cross {
-      background: url(https://s3.eu-central-1.amazonaws.com/buildevent/cross.svg);
+      background: image_url("cross.svg");
       width: 30px;
       height: 30px;
       position: relative;
@@ -71,7 +71,7 @@
       left: 9.5px;
     }
     .home {
-      background: url(https://s3.eu-central-1.amazonaws.com/buildevent/home.svg);
+      background: image_url("home.svg");
       background-repeat: no-repeat;
       width: 28px;
       height: 28px;
@@ -80,7 +80,7 @@
       left: 10px;
     }
     .user {
-      background: url(https://s3.eu-central-1.amazonaws.com/buildevent/user.svg);
+      background: image_url("user.svg");
       background-repeat: no-repeat;
       width: 30px;
       height: 30px;
