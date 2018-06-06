@@ -1,7 +1,9 @@
-<h1>New Event</h1>
+<div class="new">
+  <h1>Create an event</h1>
 
-<%= render 'form', event: @event %>
+  <%= render 'form', event: @event %>
 
-<%= link_to 'Back', events_path %>
+  <%= link_to 'Retour', events_path, class: "link" %>
 
-<%= javascript_include_tag 'new.js' %>
+  <%= javascript_include_tag 'new.js' %>
+</div>

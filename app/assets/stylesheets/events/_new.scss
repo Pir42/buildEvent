@@ -1,0 +1,48 @@
+$blue: #0057FF;
+
+.new {
+  margin-top: 5em;
+  margin-left: 10em;
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+  }
+  .form-inputs div {
+    margin: 2em 0;
+    label {
+      margin-bottom: .8em;
+    }
+  }
+  .form-actions input {
+    background-color: white; /* Green */
+    border: 1px solid $blue;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: $blue;
+    display: inline-block;
+    font-size: 1.1em;
+    transition: all .5s ease;
+  }
+  .form-actions {
+    margin-bottom: 5em;
+  }
+  .form-actions input:hover {
+      background-color: $blue;
+      color: white;
+      cursor: pointer;
+      transition: all .5s ease;
+  }
+  .link {
+    font-size: 1.1em;
+    color: $blue;
+    text-decoration: none;
+    margin-right: 2em;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+}
