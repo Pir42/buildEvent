@@ -8,6 +8,11 @@ class EventsController < ApplicationController
     @events = Event.all
     @user = current_user
     @current_user.id = current_user.id
+    @events.each do |event|
+      if event.end_time.strftime("%d") < Time.now.strftime("%d")
+        event.destroy
+      end
+    end
   end
 
   # GET /events/1

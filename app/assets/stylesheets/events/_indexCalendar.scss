@@ -2,7 +2,7 @@ $blue: #0057FF;
 
 .indexCalendar {
   width: 50%;
-  margin: 15px 100px 0 100px;
+  margin: 15px 7% 0 7%;
 }
 .simple-calendar {
   svg {
@@ -32,8 +32,8 @@ $blue: #0057FF;
   .day {
     border: 1.7px solid $blue;
     border-radius: 7px;
-    min-width: 53px;
-    height: 48px;
+    min-width: 47px;
+    height: 41px;
     text-align: center;
     padding-top: 5px;
   }
@@ -74,7 +74,7 @@ $blue: #0057FF;
     display: inline-block;
   }
   #roundBlock {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: -15px;
   }
   #round a {
